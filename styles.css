@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: #151822;
+    font-family: Century Gothic;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#main-photo {
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.75;
+}
+
+#main-photo-container {
+    height: 75vh;
+
+    background-color: #1c3755;
+}
+
+#logo-container {
+    color: white;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+}
+
+#squares-holder {
+    margin-top: 4vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: 16vh;
+}
+
+.square {
+    width: 30%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.163);
+    color: white;
+    margin-right: 3%;
+    float: left;
+
+    text-align: center;
+}
+
+.square:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+}
+
+.square-title {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.square-text {
+    font-size: 0.95em;
+    margin-top: 0.4em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.logo-text {
+    font-size: 6em;
+}
+
+.back-link {
+    font-weight: 300;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.footer-text {
+    font-size: 1.3em;
+    padding: 0.5em 0.7em;
+}
+
+.footer-text:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4)
+}

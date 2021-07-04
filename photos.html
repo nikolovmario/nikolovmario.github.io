@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>I do - Photography</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js"></script>
+
+        <style>
+            .photo {
+                width: 100%;
+                height: 100%;
+                
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #websites-container {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+            }
+
+            #websites {
+                filter: brightness(0.6);
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .cv-container {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .cv-center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .cv {
+                width: 50vw;
+                height: 50vh;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: rgba(255, 255, 255, 0.9);
+                padding: 1em 2em;
+                position: relative;
+            }
+
+            .cv:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .cv-title {
+                font-size: 2em;
+                font-weight: 700;
+                margin-bottom: 1em;
+                width: 100%;
+                text-align: center;
+            }
+
+            .cv-description {
+                font-size: 1.3em;
+            }
+
+            .close-button {
+                position: absolute;
+                bottom: 1em;
+                font-weight: 300;
+                font-size: 2em;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="websites-container">
+            <div id="websites"></div>
+            <div class="footer">
+                <div class="footer-center">
+                    <div class="footer-title">MARIO NIKOLOV</div>
+                    <div class="footer-text" onclick="goBack()">BACK TO THE MAIN PAGE</div>
+                </div>
+            </div>
+        </div>
+        <div class="cv-container" id="cv-container">
+            <div class="cv-center">
+                <div class="cv">
+                    <div class="cv-title"> MARIO NIKOLOV </div>
+                    <div class="cv-description">
+                        I have been working in the industry for over 3 years. <br>
+                        Developed many custom websites and applications that are supported to this day. <br>
+                        My clients are always satisfied with my work. <br>
+                        I have one of the highest availability and support reputations in the region. <br>
+                        Worked with valued and respected companies locally and as well as abroad. <br><br>
+
+                        <span style="font-weight: 700;">Skills:</span> <br>
+                        - React, Angular, Svelte, Node.JS, Firebase, AWS
+                    </div>
+                    <div class="close-button" onclick="closeCV()">View our products</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
