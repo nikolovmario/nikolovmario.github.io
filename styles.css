@@ -11,10 +11,6 @@ a {
     text-decoration: none;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
-
 #main-photo {
     width: 100%;
     height: 100%;
@@ -111,4 +107,17 @@ a {
 .footer-text:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.4)
+}
+
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #1b3f53;
+    border-radius: 0.2em;
 }
